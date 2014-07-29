@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gobang</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link type="text/css" rel="stylesheet" href="../static/index.css"/>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background: #aaa;
+        }
+
+        .contaniner {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .board {
+            text-align: center;
+        }
+
+        .board table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .board table td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .chese {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+        }
+
+        .black_chese {
+            background: #000;
+        }
+
+        .white_chese {
+            background: #fff;
+        }
+
+        .notice {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="contaniner">
+    <div class="board">
+        <table>
+            <caption class="notice">游客是白方，重玩请按F5刷新即可</caption>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../static/jquery-1.9.1.min.js"></script>
+<script src="../static/index.js"></script>
+</body>
+</html>
